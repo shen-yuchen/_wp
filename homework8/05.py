@@ -1,9 +1,12 @@
-def count_chars(s):
-result = {}
-for huruf in s:
-if huruf in result:
-result[huruf] += 1
-else:
-result[huruf] = 1
-return result
-print(count_chars("Deven Abisha"))
+def grade(n):
+if 90 <= n <= 100:
+return 'A'
+elif 80 <= n < 90:
+return 'B'
+elif 70 <= n < 80:
+return 'C'
+elif 60 <= n < 70:
+return 'D'
+else :
+return 'F'
+print(grade(89.9))
